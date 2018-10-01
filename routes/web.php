@@ -22,3 +22,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/inicio', function() {
     return view('inicio');
 });
+
+
+Route::resource('materia', 'MateriaController');
+Route::resource('alumno', 'AlumnoController');
+
